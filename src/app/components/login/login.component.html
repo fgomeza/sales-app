@@ -1,0 +1,26 @@
+<div class="p-grid">
+    <div class="p-col">
+    </div>
+    <div class="p-col">
+        <p-panel header="Login" class="">
+            <form [formGroup]="form" (ngSubmit)="onSubmit()"></form>
+            <div class="p-fluid">
+                <div class="p-field">
+                    <label for="username">Username</label>
+                    <input pInputText type="text" id="username"/>
+                </div>
+                <div class="p-field">
+                    <label for="passwd">Password</label>
+                    <p-password id="passwd" [toggleMask]="true"></p-password>
+                </div>
+                <div>
+                    <p-button label="Submit"></p-button>
+                </div>
+                <div>
+                    <button pButton type="button" class="p-button-link" label="Forgot password"></button>
+                </div>
+            </div>
+        </p-panel>
+    </div>
+    <div class="p-col"></div>
+</div>

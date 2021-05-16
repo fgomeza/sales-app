@@ -1,0 +1,22 @@
+<div>
+    <p-table [value]="users">
+        <ng-template pTemplate="header">
+            <tr>
+                <th>Nombre</th>
+                <th>Apellidos</th>
+                <th>Cédula</th>
+                <th>Monto vendido</th>
+                <th>Referidos</th>
+            </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-user>
+            <tr>
+                <td>user.name</td>
+                <td>user.lastName</td>
+                <td>user.identification</td>
+                <td>user.amountCollected</td>
+                <td>user.referals</td>
+            </tr>
+        </ng-template>
+    </p-table>
+</div>
