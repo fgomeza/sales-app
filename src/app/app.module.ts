@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { ButtonModule } from "primeng/button";
 import { InputTextModule } from "primeng/inputtext";
+import { MenubarModule } from 'primeng/menubar';
 import { PanelModule } from "primeng/panel";
 import { PasswordModule } from 'primeng/password';
 import { TableModule } from 'primeng/table';
@@ -12,6 +13,8 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './components/login/login.component';
 import { ProductsComponent } from './components/products/products.component';
 import { UsersComponent } from './components/users/users.component';
+import { UserAddComponent } from './components/user-add/user-add.component';
+import { OverlayPanelModule } from 'primeng/overlaypanel';
 
 @NgModule({
   declarations: [
@@ -20,7 +23,8 @@ import { UsersComponent } from './components/users/users.component';
     UsersComponent,
     ProductsComponent,
     UsersComponent,
-    ProductsComponent
+    ProductsComponent,
+    UserAddComponent
   ],
   imports: [
     FormsModule,
@@ -30,6 +34,8 @@ import { UsersComponent } from './components/users/users.component';
     InputTextModule,
     ButtonModule,
     TableModule,
+    MenubarModule,
+    OverlayPanelModule,
 
     BrowserModule,
     BrowserAnimationsModule,

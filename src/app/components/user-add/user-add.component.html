@@ -1,0 +1,25 @@
+
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <div class="p-field p-grid">
+        <label for="name" class="p-col-fixed" style="width:100px">Nombre</label>
+        <div class="p-col">
+            <input id="name" type="text" pInputText formControlName="name">
+        </div>
+    </div>
+    <div class="p-field p-grid">
+        <label for="lastName" class="p-col-fixed" style="width:100px">Apellidos</label>
+        <div class="p-col">
+            <input id="lastname" type="text" pInputText formControlName="lastName">
+        </div>
+    </div>
+    <div class="p-field p-grid">
+        <label for="identification" class="p-col-fixed" style="width:100px">Cédula</label>
+        <div class="p-col">
+            <input id="identification" type="text" pInputText formControlName="identification">
+        </div>
+    </div>
+
+    <button pButton type="submit" label="Crear" class="p-mr-3"></button>
+    <button pButton type="button" label="Cancelar" class="p-button-secondary"></button>
+</form>
+
